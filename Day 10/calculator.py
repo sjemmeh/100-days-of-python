@@ -1,5 +1,5 @@
 from art import logo
-
+from replit import clear
 
 def add(n1, n2):
     """Adds two numbers together."""
@@ -28,6 +28,7 @@ def calculate(num1, num2, operation):
     return operations[operation](num1, num2)
 
 
+print(logo)
 num1 = float(input("What's the first number?: "))
 calculating = True
 while calculating:
@@ -42,3 +43,5 @@ while calculating:
         calculating = False
     else:
         num1 = result
+        clear()
+        print(logo)
