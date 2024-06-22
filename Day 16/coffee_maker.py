@@ -27,3 +27,9 @@ class CoffeeMaker:
         for item in order.ingredients:
             self.resources[item] -= order.ingredients[item]
         print(f"Here is your {order.name} ☕️. Enjoy!")
+
+    def add_resources(self, item, amount):
+        """Adds resources to the machine"""
+        self.resources[item] += amount
+        print(f"{amount} added to {item}. Total {item}: {self.resources[item]}")
+
